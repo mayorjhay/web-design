@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="scroll.css">
+  <style>
+    .center:{
+      margin: auto;
+      display: block;
+    }
+     @font-face { font-family:'want-coffe'; 
+        src: url('Want Coffee.ttf'); }
+  </style>
+  <script src="w3.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="w3-sidebar w3-light-grey w3-bar-block"id="sidebar"style="display:none;">
+    <button class="w3-bar-item w3-btn w3-xlarge"onclick="w3.hide('#sidebar')"><i><img src="x.svg" alt="close"></i>&nbsp; Close</button>
+    <a class="w3-btn w3-bar-item w3-xlarge" href="#"><i><img src="home.svg" alt=""></i>&nbsp;Home</a>
+    <a class="w3-btn w3-xlarge w3-bar-item" href="#portfolio"><i><img src="clipboard.svg" alt=""></i>&nbsp; portfolio</a>
+    <a class="w3-btn w3-xlarge w3-bar-item" href="#location"><i><img src="map-pin.svg" alt="">&nbsp; </i> Location</a>
+    <a class="w3-btn w3-bar-item w3-xlarge" href="#contact"><i><img src="telephone-fill.svg" alt=""></i>&nbsp; Contact</a>
+  </div>
+  <div class="w3-top">
+    <div class="w3-bar w3-border w3-white w3-opacity">
+      <button class="w3-btn w3-right w3-white w3-bar-item"onclick="w3.toggleShow('#sidebar')"><img src="menu.svg" alt=""></button>
+    </div>
+  </div>
+  
+  <!--main page --->
+  <div style="margin-top:40px;"class="reaveal">
+    <h1 class="w3-center w3-serif">mayor <br> jhay</h1>
+    <p class="w3-center w3-text-grey"style="font-weight:bold;">researcher and web designer</p>
+    <img src="mayor.jpg" alt=""style="width:280px;margin:auto;display:block;margin-bottom:20px;">
+    <button class="w3-btn w3-light-grey w3-opacity"style="margin:auto;display:block;"><span><img src="download.svg" alt=""></span>download resume</button>
+  </div>
+  <div class=" w3-container w3-serif reaveal fade-bottom " id="portfolio">
+     <h1 class="w3-text-grey"style="font-family:want-coffe;">My portfolio</h1>
+     <!---slide show ---->
+     <div class="w3-display-container">
+       <img class="nature" src="tech_camera.jpg" alt="" style="width: 100%;"/>
+       <img class="nature" src="tech_phone.jpg" alt="" style="width: 100%;"/>
+       <img class="nature" src="tech_drone.jpg" alt="" style="width: 100%;"/>
+       <img class="nature" src="phone_buildings.jpg" alt="" style="width:100%;"/>
+       <button class="w3-button w3-white w3-display-left"onclick="myShow.previous()"><img src="arrow-left.svg" alt="arrow-left.svg"></button>
+       <button class="w3-button w3-white w3-display-right"onclick="myShow.next()"><img src="arrow-right.svg" alt="arrow-left.svg"></button>
+     </div>
+     <section class="w3-section">
+       <div class="w3-row w3-row-padding">
+         <!--basic-->
+         <div class="w3-third">
+           <ul class="w3-border w3-ul w3-center w3-card">
+             <li class="w3-padding-16 w3-xxlarge w3-teal"style="font-family:want-coffe;">Basic <br> web design</li>
+             <li class="w3-padding-16 w3-large">Domain and Hosting <br> for a year </li>
+             <li class="w3-padding-16 w3-large">1GB Storage</li>
+             <li class="w3-teal w3-padding-16 w3-xxlarge">$30</li>
+           </ul>
+         </div>
+         <!--end basic-->
+         <!--start vip-->
+         <div class="w3-third">
+         <ul class="w3-border w3-ul w3-center w3-card">
+           <li class="w3-padding-16 w3-xxlarge w3-teal" style="font-family:want-coffe;">Vip <br> web design</li>
+           <li class="w3-padding-16 w3-large">Domain and Hosting <br> for 2 year </li>
+           <li class="w3-padding-16 w3-large">5GB Storage</li>
+           <li class="w3-teal w3-padding-16 w3-xxlarge">$100</li>
+         </ul>
+         </div>
+         <!--End vip-->
+         <!--premium-->
+         <div class="w3-third">
+         <ul class="w3-border w3-ul w3-center w3-card">
+           <li class="w3-padding-16 w3-xxlarge w3-teal" style="font-family:want-coffe;">Premium <br> web design</li>
+           <li class="w3-padding-16 w3-large">Domain and Hosting <br> for 3 year </li>
+           <li class="w3-padding-16 w3-large">1GB Storage</li>
+           <li class="w3-teal w3-padding-16 w3-xxlarge">$300</li>
+         </ul>
+         
+         </div>
+         <!--End premium-->
+         <button class="w3-btn w3-light-grey w3-opacity"style="margin:auto;dislay:block;"><span><img src="download.svg" alt="download.svg"></span>&nbsp; download plans</button>
+       </div>
+     </section>
+  </div>
+  <!--location-->
+  <section class="w3-section w3-container"id="location">
+    <h1 class="w3-text-grey"style="font-family:want-coffe;">My Work place</h1>
+    <img src="map.jpg" alt=""style="width:100%; margin-bottom:10px;">
+    <ul class="w3-ul w3-center w3-border">
+      <li class="w3-padding-16 w3-teal w3-xlarge">
+        <span><img src="map-pin.svg" alt=""></span><br>
+        Lagos,Nigeria
+      </li>
+      <li class="w3-white w3-xlarge w3-padding-16"><span><img src="telephone-fill.svg" alt=""></span> <br> 07018017688</li>
+      <li class="w3-teal w3-xlarge w3-padding-16"><span><img src="chat-right-text-fill.svg" alt="chat-right-text-fill.svg"></span><br>
+        mayorjhay2@gmail.com</li>
+    </ul>
+    
+  </section>
+  <!--contact-->
+  <section class=""style="font-family:want-coffe;"id="contact">
+    <h1 class="w3-center">Contact me</h1>
+  <form action="#" class="w3-container w3-section"style="font-family:want-coffe;">
+    <label for="name">Name</label>
+    <input type="text/submit/hidden/button" name="" id="name" class="w3-input" />
+    <label for="email">Email</label>
+    <input type="text/submit/hidden/button" name="" id="email" class="w3-input" />
+    <label for="message">Your message</label>
+    <input type="text/submit/hidden/button" name="" id="message" class="w3-input" />
+    <button type="submit"class="w3-btn w3-teal w3-text-white w3-padding w3-margin-top"style="display:block;margin:auto;">Send Message</button>
+  </form>
+  </section>
+  <section class="w3-footer w3-padding-16 w3-center">
+    <p style="font-weight: bold;">Mayorjhay Web design , 2022 </p>
+  </section>
+  <script>
+    var myShow = w3.slideshow(".nature", 0);
+  </script>
+  <script src="scroll.js"></script>
+</body>
+</html>
